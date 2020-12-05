@@ -1,0 +1,37 @@
+#!/bin/bash
+# Setup Menu Interface 
+#
+#
+echo "---------------------------"
+echo " Menu Interface for Commands "
+echo ""
+echo " A. Display Calendar"
+echo " B. Ping Host"
+echo " C. Display Disk Usage" 
+echo " D. Display Disk Free Space"
+echo "---------------------------"
+echo ""
+echo -n "Enter a choice: "
+read answer 
+echo 
+case "$answer" in 
+A | a) 
+# Display Calendar 
+cal 2020 
+cal 12 2020 
+;; 
+B | b) 
+# Ping Host
+ping -c4 xxx.xxx.xxx
+;;
+C | c) 
+# Display Disk Usage 
+du -sk /home/xx/xx
+;;
+# Display Disk Free Space 
+df -h | head -n15
+;;
+*)
+echo "Wrong Answer $answer .... Try Again"
+;;
+esac
