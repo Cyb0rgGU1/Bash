@@ -1,6 +1,0 @@
-#!/bin/bash
-#Just a simple hello! 
-#-----
-
-var="Hello world" 
-echo "$var"
