@@ -1,7 +1,6 @@
 #!/bin/bash
-# Setup Menu Interface 
-#
-#
+# Menu interface 
+
 echo "---------------------------"
 echo " Menu Interface for Commands "
 echo ""
